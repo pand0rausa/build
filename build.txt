@@ -1,0 +1,79 @@
+APT proxy:
+Http://askubuntu.com/questions/257290/configure-proxy-for-apt
+
+sudo apt-get install sudo terminator gcc make build-essential chromium keepnote conky python-pip git powerline openssl aircrack-ng kismet kismet-plugins subversion libpcap-dev libpcap0.8 liblua5.2-dev liblua5.2-0 libdnet libdnet-dev libpcre3 libpcre3-dev moreutils psad fwsnort ufw gufw linux-headers-$(uname -r) wireshark yersinia arduino bless hardinfo ike-scan ubertooth bluez* btscanner filezilla playonlinux okular minicom hydra ldap-utils rwho rsh-client x11-apps finger python-elixir python-qt4 xsltproc nmap nodejs npm gksu macchanger* sslscan libpcap0.8-dev python-libpcap libnet-dev python-dumbnet tcpdump graphwiz imagemagick python-gnuplot python-crypto python-pyx nmap john phantomjs snmp rdesktop cewl pypy thc-ipv6 tcpreplay vlan ettercap smbclient exfat-fuse exfat-utils nasm gtk-recordmydesktop
+
+pip install ftputil pysmb yattag
+
+http://www.popped.io/2016/10/setting-up-bloodhound-on-debian-jessie.html?m=1
+
+git clone https://github.com/adaptivethreat/BloodHound.git ~/Applications/Windows/Bloodhound
+
+ ~/Applications/Windows/Bloodhound$ sudo npm install -g electron-packager
+
+ ~/Applications/Windows/Bloodhound$ npm install webpack
+
+ ~/Applications/Windows/Bloodhound$ npm install node
+
+ ~/Applications/Windows/Bloodhound$ npm install
+
+npm run linuxbuild 
+
+wget http://www.secdev.org/projects/scapy/files/scapy-latest.tar.gz
+
+tar zxvf scapy-latest.tar.gz
+
+cd scapy*
+
+sudo python setup.py install
+
+git clone https://github.com/SpiderLabs/Responder.git ~/Applications/Windows/Responder
+
+git clone https://github.com/SECFORCE/sparta.git ~/Applications/Network/Sparta
+
+git clone https://github.com/skahwah/wordsmith.git ~/Applications/Password/Wordsmith
+
+Install sublime
+
+Config changes:
+
+Allow weak SSH keys: 
+
+    echo PermitBlacklistedKeys yes >> /etc/ssh/sshd_config
+
+Setup USB modem: 
+
+    sudo modprobe usbserial vendor=0x0572 product=0x1329
+
+    minicom -s   (/dev/ttyACM0)
+
+Other non-packaged applications:
+
+Sublime 3
+
+dirb
+
+http://askubuntu.com/questions/283908/how-can-i-install-and-use-powerline-plugin
+
+
+
+/etc/apt/sources.list
+
+deb http://mirrors.kernel.org/debian/ jessie main
+deb-src http://mirrors.kernel.org/debian/ jessie main
+
+deb http://security.debian.org/ jessie/updates main
+deb-src http://security.debian.org/ jessie/updates main
+
+# jessie-updates, previously known as 'volatile'
+deb http://mirrors.kernel.org/debian/ jessie-updates main
+deb-src http://mirrors.kernel.org/debian/ jessie-updates main
+
+deb http://http.us.debian.org/debian stable main contrib non-free
+deb-src http://http.us.debian.org/debian stable main contrib non-free
+
+#deb http://http.us.debian.org/debian  experimental main
+#deb-src http://http.us.debian.org/debian  experimental main
+
+deb http://http.us.debian.org/debian  unstable main
+deb-src http://http.us.debian.org/debian  unstable main
